@@ -1,0 +1,12 @@
+<div>
+    <h1>Celebrities</h1>
+    <ul>
+        {{#each data}}
+        <h2><a href="/celebrity/{{_id}}">{{name}}</a> | <a href="/celebrity/{{_id}}/delete">DELETE</a></h2>
+        {{/each}}
+    </ul>
+    <a href="/new-celebrity">Add a celeb</a>
+    <br>
+    <br>
+    <a href="/">Go back</a>
+</div>

@@ -1,0 +1,21 @@
+<div>
+    {{#with movieEdit}}
+    <h1>Edit {{title}}</h1>
+    <form action="/edit-movie/{{_id}}" method="POST">
+        <label for="title">Title:
+            <input value="{{title}}" type="text" name="title">
+        </label>
+        <label for="genre">Genre:
+            <input value="{{genre}}" type="text" name="genre">
+        </label>
+
+        <label for="plot">Plot:
+            <input value="{{plot}}" type="text" name="plot">
+        </label>
+
+        <button type="submit">UPDATE</button>
+    </form>
+    {{/with}}
+    <br>
+    <a href="/movies">Go back</a>
+</div>

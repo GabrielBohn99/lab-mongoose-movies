@@ -1,0 +1,12 @@
+<div>
+    <h1>Movies</h1>
+    <ul>
+        {{#each data}}
+        <h2><a href="/movie/{{_id}}">{{title}}</a> | <a href="/movie/{{_id}}/delete">DELETE</a></h2>
+        {{/each}}
+    </ul>
+    <a href="/new-movie">Add a movie</a>
+    <br>
+    <br>
+    <a href="/">Go back</a>
+</div>
